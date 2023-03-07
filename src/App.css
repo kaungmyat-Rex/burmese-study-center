@@ -1,38 +1,202 @@
 .App {
-  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  padding-bottom: 900px;
+  background: rgb(47, 69, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 69, 129, 1) 0%,
+    rgba(42, 73, 161, 1) 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*--------
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+-----------
+
+------
+
+---------
+
+--------- nav section
+------
+
+---------
+------
+
+-------------- */
+.nav-section {
+  width: 100%;
+  position: fixed;
+  top: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: unset;
+  transition: 300ms;
+}
+
+.nav-section-bg {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.nav-main {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo h4 {
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  transition: 300ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-list-color {
+  color: black;
+  transition: 300ms;
+}
+
+.home,
+.about,
+.library,
+.program,
+.contact,
+.feedback {
+  margin-right: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+.home:hover,
+.about:hover,
+.library:hover,
+.program:hover,
+.contact:hover,
+.feedback:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: rgb(105, 105, 255);
+  transition: 200ms;
+}
+
+.donate {
+  font-weight: 600;
+  background-color: rgb(31, 31, 159);
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donate:hover {
+  background-color: rgb(26, 26, 108);
+  transition: 200ms;
+}
+
+/*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- bg-section
+------
+
+---------
+------
+
+-------------- */
+
+.bg-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(174, 174, 174);
+  background-image: url("../src/img/bg2-medium.jpg");
+
+  width: 100dvw;
+  height: 100dvh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  /****use in mobile view*/
+  /* background-position: -350px 0px; */
+  /* padding-top: 250px;
+  padding-bottom: 250px; */
+
+  /****use in desktop view*/
+  /* background-position: 0px -200px; */
+  background-blend-mode: multiply;
+  background-position: 0px -160px;
+}
+
+.bg-border {
+  width: 90%;
+}
+
+.bg-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-main h4 {
+  color: #eeeeee;
+  font-size: 3rem;
+  margin: 0px;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.bg-main p {
+  color: rgb(226, 224, 224);
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.bg-main button {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: white;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.3rem;
+  transition: 300ms;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.bg-main button:hover {
+  background-color: white;
+  color: black;
+  transition: 300ms;
 }
