@@ -101,9 +101,10 @@
   max-width: 250px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-
+  text-align: left;
   color: rgb(174, 174, 174);
   align-items: center;
+  font-size: 0.95rem;
 }
 
 .footer-icon {
@@ -112,7 +113,7 @@
 }
 
 .footer-icon2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-right: 10px;
 }
 
