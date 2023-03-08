@@ -1,0 +1,153 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+
+  background-color: #252525;
+}
+
+.footer-border {
+  width: 100%;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  color: white;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+}
+
+.footer-menu p {
+  letter-spacing: 1px;
+  padding: 0px 70px 0px 70px;
+  border-right: 1px solid rgb(116, 116, 116);
+}
+
+.footer-bar {
+  max-width: 1200px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(62, 62, 62);
+  margin: 70px 0px 30px 0px;
+}
+
+.policy-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.policy-covid,
+.policy-student,
+.policy-library,
+.policy-contact {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.policy-covid h4,
+.policy-student h4,
+.policy-library h4,
+.policy-contact h4 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.policy-bar {
+  max-width: 50px;
+  height: 5px;
+  background-color: rgb(105, 105, 255);
+  width: 100%;
+}
+
+.policy-covid p,
+.policy-student p,
+.policy-library p {
+  max-width: 250px;
+  width: 100%;
+  color: rgb(174, 174, 174);
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 24px;
+}
+
+.policy-contact p {
+  display: flex;
+  flex-direction: row;
+  max-width: 250px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+
+  color: rgb(174, 174, 174);
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.footer-icon2 {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.facebook,
+.insta,
+.twitar,
+.mail {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 10px;
+  transform: 200ms;
+  cursor: pointer;
+}
+
+.facebook:hover,
+.insta:hover,
+.twitar:hover,
+.mail:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transition: 200ms ease-out;
+}
+
+.copyright {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060606;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  color: rgb(163, 163, 163);
+  margin: 0px;
+  margin-top: 30px;
+}

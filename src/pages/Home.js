@@ -6,6 +6,12 @@ import bsc from "../img/bsc1.jpg";
 import eventOne from "../img/bsc1.jpg";
 import eventTwo from "../img/bsc2.jpg";
 import eventThree from "../img/bsc3.jpg";
+import {
+  ButtonFeedback,
+  ButtonFeedbacktwo,
+  ButtonFeedbackthree,
+} from "../component/button/ButtonFeedback";
+import Footer from "../component/footer/Footer";
 const Home = ({ scroll }) => {
   return (
     <>
@@ -38,7 +44,7 @@ const Home = ({ scroll }) => {
                 international community.
               </p>
               <div className="pv-btn-div">
-                <p class="example_f" target="_blank" rel="nofollow">
+                <p className="example_f" target="_blank" rel="nofollow">
                   <span>Learn More</span>
                 </p>
               </div>
@@ -50,6 +56,8 @@ const Home = ({ scroll }) => {
         </div>
       </div>
       <div className="event-section">
+        <p className="event-text">Events</p>
+        <h4 className="event-title">Latest campaign</h4>
         <div className="event-border">
           <div className="event-main">
             <div className="event-one">
@@ -93,8 +101,12 @@ const Home = ({ scroll }) => {
             </div>
           </div>
         </div>
+        <div style={{ marginTop: "40px" }}>
+          <ButtonFeedbackthree moreevent={"View More Event"} />
+        </div>
       </div>
       <div className="feedback-section">
+        <p className="testimontal">TESTIMONIALS</p>
         <h4 className="feedback-title">What Our Student are Saying</h4>
         <div className="feedback-border">
           <div className="feedback-main">
@@ -139,7 +151,12 @@ const Home = ({ scroll }) => {
             </div>
           </div>
         </div>
+        <div className="feedback-btn">
+          <ButtonFeedback viewmore={"View Student Reviews"} />
+          <ButtonFeedbacktwo giveFeed={"Write Your Reviews"} />
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
