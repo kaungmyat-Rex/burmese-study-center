@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 function App() {
   const [scroll, getscroll] = useState(false);
   const [current, setcurrent] = useState(0);
+  const [openNav, setopenNav] = useState(false);
   const [prev, setprev] = useState(200);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Home scroll={scroll} />
+      <Home scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
     </div>
   );
 }

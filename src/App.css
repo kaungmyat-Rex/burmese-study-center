@@ -38,7 +38,7 @@
   align-items: center;
   background-color: unset;
   transition: 300ms;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-section-bg {
@@ -117,6 +117,9 @@
   transition: 200ms;
 }
 
+.hamburgar {
+  display: none;
+}
 /*--------
 
 
@@ -215,6 +218,23 @@
   position: absolute;
   bottom: 30px;
 }
+
+/*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- provide section
+------
+
+---------
+------
+
+-------------- */
 
 .provide-section {
   display: flex;
@@ -617,4 +637,148 @@
   align-items: center;
   margin-top: 90px;
   gap: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-section {
+    background-color: #ffffff;
+  }
+
+  .nav-logo h4 {
+    color: #252525;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .hamburgar {
+    display: block;
+  }
+
+  .bg-section {
+    width: 100%;
+    height: unset;
+    background-position: -190px 0px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-attachment: unset;
+  }
+  .bg-border {
+    width: 95%;
+  }
+
+  .bg-main h4 {
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 5px #080808;
+  }
+
+  .bg-main p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .bg-main button {
+    margin-top: 40px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- provide section
+------
+
+---------
+------
+
+-------------- */
+
+  .provide-border {
+    width: 90%;
+  }
+
+  .provide-main {
+    flex-direction: column;
+  }
+
+  .pv-text-gp {
+    align-items: center;
+  }
+
+  .pv-text-gp p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .pv-btn-div {
+    margin-bottom: 70px;
+  }
+
+  .provide-img img {
+    max-width: 300px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- Event section
+------
+
+---------
+------
+
+-------------- */
+
+  .event-main {
+    flex-direction: column;
+  }
+
+  .event-two {
+    flex-direction: column;
+  }
+
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- feedback-section
+------
+
+---------
+------
+
+-------------- */
+
+  .feedback-main {
+    flex-direction: column;
+  }
+
+  .testi-one {
+    margin: 30px;
+  }
+
+  .testi-one p {
+    padding: 0px 24px 0px 24px;
+  }
+
+  .feedback-btn {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+  }
 }

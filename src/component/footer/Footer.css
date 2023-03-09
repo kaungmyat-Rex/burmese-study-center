@@ -152,3 +152,39 @@
   margin: 0px;
   margin-top: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .footer-title {
+    font-size: 2rem;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .footer-menu p {
+    padding: 0px 20px 0px 20px;
+  }
+  .policy-covid,
+  .policy-student,
+  .policy-library,
+  .policy-contact {
+    margin: 20px;
+  }
+  .policy-covid p,
+  .policy-student p,
+  .policy-library p {
+    max-width: 400px;
+  }
+  .policy-contact p {
+    max-width: 400px;
+  }
+
+  .footer-icon2 {
+    margin-left: -5px;
+  }
+  .copyright {
+    font-size: 0.5rem;
+  }
+}

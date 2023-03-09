@@ -12,11 +12,15 @@ import {
   ButtonFeedbackthree,
 } from "../component/button/ButtonFeedback";
 import Footer from "../component/footer/Footer";
-const Home = ({ scroll }) => {
+import Sidenav from "../component/sidenav/Sidenav";
+const Home = ({ scroll, openNav, setopenNav }) => {
   return (
     <>
       <div className="bg-section">
-        <Nav scroll={scroll} />
+        <Nav scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
+
+        <Sidenav openNav={openNav} setopenNav={setopenNav} />
+
         <div className="bg-border">
           <div className="bg-main">
             <h4>BURMA STUDY CENTER</h4>
@@ -56,7 +60,7 @@ const Home = ({ scroll }) => {
         </div>
       </div>
       <div className="event-section">
-        <p className="event-text">Events</p>
+        <p className="event-text">EVENTS</p>
         <h4 className="event-title">Latest campaign</h4>
         <div className="event-border">
           <div className="event-main">
@@ -107,7 +111,7 @@ const Home = ({ scroll }) => {
       </div>
       <div className="feedback-section">
         <p className="testimontal">TESTIMONIALS</p>
-        <h4 className="feedback-title">What Our Student are Saying</h4>
+        <h4 className="feedback-title">Student Feedbacks</h4>
         <div className="feedback-border">
           <div className="feedback-main">
             <div className="testi-one">
