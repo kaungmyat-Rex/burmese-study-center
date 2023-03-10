@@ -28,6 +28,7 @@
 ------
 
 -------------- */
+
 .nav-section {
   width: 100%;
   position: fixed;
@@ -780,5 +781,210 @@
     flex-direction: column;
     margin-top: 40px;
     gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .nav-section {
+    background-color: #ffffff;
+  }
+
+  .nav-logo h4 {
+    color: #252525;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  .hamburgar {
+    display: block;
+  }
+  .bg-section {
+    width: 100%;
+    height: unset;
+    background-position: -140px 0px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-attachment: unset;
+  }
+  .bg-border {
+    width: 95%;
+  }
+  .bg-main h4 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px #080808;
+  }
+  .bg-main p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .bg-main button {
+    margin-top: 20px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- provide section
+------
+
+---------
+------
+
+-------------- */
+
+  .provide-border {
+    width: 90%;
+  }
+  .provide-main {
+    flex-direction: column;
+  }
+  .pv-text-gp {
+    align-items: center;
+  }
+  .pv-text-gp p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .pv-btn-div {
+    margin-bottom: 70px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- Event section
+------
+
+---------
+------
+
+-------------- */
+
+  .event-main {
+    flex-direction: column;
+  }
+
+  .event-two {
+    flex-direction: column;
+  }
+
+  .eOne-img,
+  .eOne-text,
+  .eTwo-img,
+  .eTwo-text,
+  .eThree-text,
+  .eThree-img {
+    max-width: 600px;
+  }
+
+  .eOne-text h4,
+  .eTwo-text h4,
+  .eThree-text h4 {
+    font-size: 2rem;
+  }
+
+  .eOne-text p,
+  .eTwo-text p,
+  .eThree-text p {
+    font-size: 1.1rem;
+  }
+  .feedback-main {
+    flex-direction: column;
+  }
+  .testi-one {
+    margin: 30px 100px 20px 100px;
+  }
+}
+
+@media only screen and (max-width: 845px) and (min-width: 769px) {
+  .nav-section {
+    background-color: #ffffff;
+  }
+
+  .nav-logo h4 {
+    color: #252525;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  .hamburgar {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .bg-section {
+    width: 100dvw;
+    height: 100dvh;
+    background-position: -140px 0px;
+
+    background-attachment: fixed;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- provide section
+------
+
+---------
+------
+
+-------------- */
+  .provide-border {
+    width: 90%;
+  }
+  .pv-text-gp p {
+    max-width: 90%;
+  }
+  .provide-img img {
+    max-width: 400px;
+    /* border: 7px solid #2f4581; */
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- feedback-section
+------
+
+---------
+------
+
+-------------- */
+  .testi-one {
+    margin: 0px 5px 0px 5px;
+  }
+  .testi-one p {
+    font-size: 0.9rem;
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 992px) {
+  .bg-section {
+    background-position: unset;
   }
 }
