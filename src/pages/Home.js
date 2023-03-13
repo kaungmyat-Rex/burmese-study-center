@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../component/Nav";
+import { Nav } from "../component/Nav";
 import { BsArrowDown } from "react-icons/bs";
 import { BsChatRightQuote } from "react-icons/bs";
 import bsc from "../img/bsc1.jpg";

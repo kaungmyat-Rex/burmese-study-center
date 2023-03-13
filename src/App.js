@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   const [scroll, getscroll] = useState(false);
@@ -22,7 +23,26 @@ function App() {
 
   return (
     <div className="App">
-      <Home scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <About
+                scroll={scroll}
+                openNav={openNav}
+                setopenNav={setopenNav}
+              />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
