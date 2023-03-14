@@ -1020,6 +1020,101 @@
     margin-top: 40px;
     gap: 30px;
   }
+  /********************************************** About page ************
+******************************************************************************************************************/
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-section
+------
+
+---------
+------
+
+-------------- */
+
+  .about-main {
+    background-position: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-main h4 {
+    font-size: 2.2rem;
+    right: unset;
+    top: unset;
+    left: unset;
+    text-align: center;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-story-section
+------
+
+---------
+------
+
+-------------- */
+  .about-story-section {
+    padding-top: 0px;
+  }
+
+  .about-story-main {
+    flex-direction: column-reverse;
+  }
+
+  .about-story-text {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-story-text p {
+    line-height: 1.5rem;
+  }
+  .about-story-img {
+    padding-top: 50px;
+    max-width: 320px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-vision-section
+------
+
+---------
+------
+
+-------------- */
+
+  .about-vision-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vision-two,
+  .vision-three {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
@@ -1147,6 +1242,103 @@
   .testi-one {
     margin: 30px 100px 20px 100px;
   }
+
+  /********************************************** About page ************
+******************************************************************************************************************/
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-section
+------
+
+---------
+------
+
+-------------- */
+
+  .about-main {
+    background-position: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-main h4 {
+    font-size: 2.2rem;
+    right: unset;
+    top: unset;
+    left: unset;
+    text-align: center;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-story-section
+------
+
+---------
+------
+
+-------------- */
+  .about-story-section {
+    padding-top: 0px;
+  }
+
+  .about-story-main {
+    flex-direction: column-reverse;
+  }
+
+  .about-story-text {
+    padding-left: 0px;
+  }
+
+  .about-story-text p {
+    max-width: 500px;
+  }
+
+  .about-story-img {
+    padding-top: 50px;
+    max-width: 520px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-vision-section
+------
+
+---------
+------
+
+-------------- */
+
+  .about-vision-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vision-two,
+  .vision-three {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 845px) and (min-width: 769px) {
@@ -1226,6 +1418,52 @@
   .testi-one p {
     font-size: 0.9rem;
     padding: 0px 15px 0px 15px;
+  }
+
+  /********************************************** About page ************
+******************************************************************************************************************/
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-section
+------
+
+---------
+------
+
+-------------- */
+
+  .about-main {
+    background-position: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-story-border {
+    width: 95%;
+  }
+  .about-story-img {
+    max-width: 300px;
+  }
+
+  .about-story-text {
+    padding-left: 50px;
+  }
+  .about-story-text p {
+    max-width: 400px;
+    line-height: 1.5rem;
+  }
+
+  .about-vision-border {
+    width: 95%;
   }
 }
 
