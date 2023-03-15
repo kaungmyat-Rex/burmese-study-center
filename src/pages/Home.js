@@ -13,7 +13,9 @@ import {
 } from "../component/button/ButtonFeedback";
 import Footer from "../component/footer/Footer";
 import Sidenav from "../component/sidenav/Sidenav";
+import useScroll from "../component/scrollTop";
 const Home = ({ scroll, openNav, setopenNav }) => {
+  useScroll();
   return (
     <>
       <div className="bg-section">
@@ -29,11 +31,13 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               Thailand
             </p>
             <button>Contact Us</button>
-            <BsArrowDown className="arrow-down" />
+            <a href="#provide">
+              <BsArrowDown className="arrow-down" />
+            </a>
           </div>
         </div>
       </div>
-      <div className="provide-section">
+      <div className="provide-section" id="provide">
         <div className="provide-border">
           <div className="provide-main">
             <div className="pv-text-gp">

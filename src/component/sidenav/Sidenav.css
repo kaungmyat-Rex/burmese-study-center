@@ -47,8 +47,12 @@
   align-items: center;
   padding: 30px 0px 30px 0px;
   margin: 0px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
   text-transform: uppercase;
+}
+
+.sidenav-main p:hover {
+  background-color: #415fb0;
 }
 
 .sidenav-main p span {

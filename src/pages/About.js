@@ -6,8 +6,10 @@ import { TbTargetArrow } from "react-icons/tb";
 import { TiLightbulb } from "react-icons/ti";
 import { AiOutlineTrophy } from "react-icons/ai";
 import Footer from "../component/footer/Footer";
+import useScroll from "../component/scrollTop";
 
 const About = ({ scroll, openNav, setopenNav }) => {
+  useScroll();
   return (
     <>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
