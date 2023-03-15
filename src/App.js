@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   const [scroll, getscroll] = useState(false);
@@ -40,6 +41,10 @@ function App() {
                 setopenNav={setopenNav}
               />
             }
+          />
+          <Route
+            path="/contact"
+            element={<Contact openNav={openNav} setopenNav={setopenNav} />}
           />
         </Routes>
       </BrowserRouter>

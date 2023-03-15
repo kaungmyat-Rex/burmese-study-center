@@ -20,7 +20,7 @@ export const Nav = ({ scroll, openNav, setopenNav }) => {
           <p className="about">
             {" "}
             <Link
-              to={"about"}
+              to={"/about"}
               style={{ color: "unset", textDecoration: "none" }}
             >
               About Us
@@ -40,7 +40,10 @@ export const Nav = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="contact">
             {" "}
-            <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
+            <Link
+              to={"/contact"}
+              style={{ color: "unset", textDecoration: "none" }}
+            >
               Contact Us
             </Link>
           </p>
@@ -77,7 +80,7 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
           <p className="about">
             {" "}
             <Link
-              to={"about"}
+              to={"/about"}
               style={{ color: "unset", textDecoration: "none" }}
             >
               About Us
@@ -97,7 +100,10 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="contact">
             {" "}
-            <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
+            <Link
+              to={"/contact"}
+              style={{ color: "unset", textDecoration: "none" }}
+            >
               Contact Us
             </Link>
           </p>
