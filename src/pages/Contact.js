@@ -43,11 +43,8 @@ const Contact = ({ openNav, setopenNav }) => {
             <div className="map">
               {/* <MapContainer /> */}
               <iframe
+                className="iframe-map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d944.2654383144312!2d98.9688304!3d18.7954011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a884c73fc1b%3A0x607a61c23c8f6770!2sBurma%20Study%20Center!5e0!3m2!1sen!2smm!4v1678820636008!5m2!1sen!2smm"
-                style={{ width: "100%", height: "100%" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
