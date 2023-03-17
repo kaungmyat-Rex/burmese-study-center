@@ -22,7 +22,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/"}
             onClick={() => closeNav()}
@@ -37,7 +37,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/about"}
             onClick={() => closeNav()}
@@ -53,7 +53,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/"}
             onClick={() => closeNav()}
@@ -69,7 +69,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/"}
             onClick={() => closeNav()}
@@ -85,7 +85,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/contact"}
             onClick={() => closeNav()}
@@ -101,7 +101,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               width: "100%",
               color: "white",
               textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
             to={"/"}
             onClick={() => closeNav()}
