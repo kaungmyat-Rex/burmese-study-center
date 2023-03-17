@@ -65,7 +65,11 @@ export const Nav = ({ scroll, openNav, setopenNav }) => {
 
 export const NavVersion = ({ scroll, openNav, setopenNav }) => {
   return (
-    <div className="nav-section-version">
+    <div
+      className={`nav-section-version ${
+        scroll ? "nav-section-version-show" : ""
+      }`}
+    >
       <div className="nav-main">
         <div className="nav-logo">
           <h4>Logo</h4>

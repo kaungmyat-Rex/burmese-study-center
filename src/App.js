@@ -44,7 +44,13 @@ function App() {
           />
           <Route
             path="/contact"
-            element={<Contact openNav={openNav} setopenNav={setopenNav} />}
+            element={
+              <Contact
+                scroll={scroll}
+                openNav={openNav}
+                setopenNav={setopenNav}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

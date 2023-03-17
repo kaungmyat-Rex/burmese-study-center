@@ -4,11 +4,11 @@ import Sidenav from "../component/sidenav/Sidenav";
 
 import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
-const Contact = ({ openNav, setopenNav }) => {
+const Contact = ({ scroll, openNav, setopenNav }) => {
   useScroll();
   return (
     <>
-      <NavVersion openNav={openNav} setopenNav={setopenNav} />
+      <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
       <Sidenav openNav={openNav} setopenNav={setopenNav} />
       <div className="contact-section">
         <div className="contact-border">
@@ -23,8 +23,8 @@ const Contact = ({ openNav, setopenNav }) => {
             <div className="input">
               <h4>Send us a message</h4>
               <p>
-                To make an appointment to visit, please contact us or if you
-                have other request or question, don’t hesitate to use the form.
+                Make an appointment to visit, please contact us or if you have
+                other request or question, don’t hesitate to use the form.
               </p>
               <div className="nameEmail">
                 <input type="text" placeholder="  Name" />

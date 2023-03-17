@@ -2,10 +2,10 @@ import React from "react";
 import { Nav } from "../component/Nav";
 import { BsArrowDown } from "react-icons/bs";
 import { BsChatRightQuote } from "react-icons/bs";
-import bsc from "../img/bsc1.jpg";
-import eventOne from "../img/bsc1.jpg";
-import eventTwo from "../img/bsc2.jpg";
-import eventThree from "../img/bsc3.jpg";
+import bsc from "../img/about.jpg";
+import eventOne from "../img/e2.JPG";
+import eventTwo from "../img/e1.JPG";
+import eventThree from "../img/e3.JPG";
 import {
   ButtonFeedback,
   ButtonFeedbacktwo,

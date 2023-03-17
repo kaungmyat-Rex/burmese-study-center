@@ -1,7 +1,7 @@
 import React from "react";
 import { NavVersion } from "../component/Nav";
 import Sidenav from "../component/sidenav/Sidenav";
-import aboutImg from "../img/bsc3.jpg";
+import aboutImg from "../img/story.JPG";
 import { TbTargetArrow } from "react-icons/tb";
 import { TiLightbulb } from "react-icons/ti";
 import { AiOutlineTrophy } from "react-icons/ai";
