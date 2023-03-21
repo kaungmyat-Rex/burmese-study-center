@@ -61,9 +61,18 @@
   align-items: center;
 }
 
-.nav-logo h4 {
+/* .nav-logo h4 {
   font-size: 20px;
   color: white;
+} */
+
+.nav-white-logo {
+  max-width: 350px;
+}
+
+.nav-black-logo {
+  max-width: 350px;
+  height: 60px;
 }
 
 .nav-list {
@@ -1052,11 +1061,25 @@
 
 @media only screen and (max-width: 600px) {
   .nav-section {
+    background-color: #252525;
+  }
+
+  .nav-section-bg {
     background-color: #ffffff;
   }
 
   .nav-logo h4 {
     color: #252525;
+  }
+
+  .nav-white-logo {
+    width: 230px;
+    height: 60px;
+  }
+
+  .nav-black-logo {
+    max-width: 350px;
+    height: 60px;
   }
 
   .nav-list {
@@ -1348,11 +1371,25 @@
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
   .nav-section {
+    background-color: #252525;
+  }
+
+  .nav-section-bg {
     background-color: #ffffff;
   }
 
   .nav-logo h4 {
     color: #252525;
+  }
+
+  .nav-white-logo {
+    width: 230px;
+    height: 60px;
+  }
+
+  .nav-black-logo {
+    max-width: 350px;
+    height: 60px;
   }
 
   .nav-list {
@@ -1597,11 +1634,25 @@
 
 @media only screen and (max-width: 845px) and (min-width: 769px) {
   .nav-section {
+    background-color: #252525;
+  }
+
+  .nav-section-bg {
     background-color: #ffffff;
   }
 
   .nav-logo h4 {
     color: #252525;
+  }
+
+  .nav-white-logo {
+    width: 230px;
+    height: 60px;
+  }
+
+  .nav-black-logo {
+    max-width: 350px;
+    height: 60px;
   }
 
   .nav-list {
@@ -1617,12 +1668,30 @@
 }
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
+  .nav-white-logo {
+    max-width: 200px;
+  }
+
+  .nav-black-logo {
+    max-width: 200px;
+    height: 60px;
+  }
+
   .bg-section {
     width: 100dvw;
     height: 100dvh;
     background-position: -140px 0px;
 
     background-attachment: fixed;
+  }
+
+  .home,
+  .about,
+  .library,
+  .program,
+  .contact,
+  .feedback {
+    margin-right: 20px;
   }
   /*--------
 

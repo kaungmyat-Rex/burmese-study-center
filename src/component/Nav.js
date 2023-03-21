@@ -1,13 +1,19 @@
 import React from "react";
 import { Divide as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
+import logo from "../img/log-bsc.png";
+import logoBlack from "../img/bsc-blue-logo.png";
 
 export const Nav = ({ scroll, openNav, setopenNav }) => {
   return (
     <div className={`nav-section ${scroll ? "nav-section-bg" : ""}`}>
       <div className="nav-main">
         <div className="nav-logo">
-          <h4>Logo</h4>
+          {scroll ? (
+            <img className="nav-black-logo" src={logoBlack} alt="logo-white" />
+          ) : (
+            <img className="nav-white-logo" src={logo} alt="logo" />
+          )}
         </div>
         <div className={`nav-list ${scroll ? "nav-list-color" : ""}`}>
           {" "}
@@ -56,7 +62,11 @@ export const Nav = ({ scroll, openNav, setopenNav }) => {
           <p className="donate">Donate</p>
         </div>
         <div className="hamburgar">
-          <Hamburger color="#252525" toggle={setopenNav} toggled={openNav} />
+          <Hamburger
+            color={`${scroll ? "#252525" : "#ffffff"}`}
+            toggle={setopenNav}
+            toggled={openNav}
+          />
         </div>
       </div>
     </div>
@@ -72,7 +82,7 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
     >
       <div className="nav-main">
         <div className="nav-logo">
-          <h4>Logo</h4>
+          <img className="nav-black-logo" src={logoBlack} alt="logo-white" />
         </div>
         <div className="nav-list-version">
           <p className="home">
