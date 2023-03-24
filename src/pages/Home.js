@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from "../component/Nav";
+import { NavVersion } from "../component/Nav";
 import { BsArrowDown } from "react-icons/bs";
 import { BsChatRightQuote } from "react-icons/bs";
 import bsc from "../img/about.jpg";
@@ -19,7 +19,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
   return (
     <>
       <div className="bg-section">
-        <Nav scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
+        <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
 
         <Sidenav openNav={openNav} setopenNav={setopenNav} />
 

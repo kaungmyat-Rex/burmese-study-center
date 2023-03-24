@@ -7,6 +7,8 @@ import { TiLightbulb } from "react-icons/ti";
 import { AiOutlineTrophy } from "react-icons/ai";
 import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
+import mentorOne from "../img/Garrett-png.png";
+import mentorTwo from "../img/Sai-png.png";
 
 const About = ({ scroll, openNav, setopenNav }) => {
   useScroll();
@@ -21,7 +23,7 @@ const About = ({ scroll, openNav, setopenNav }) => {
           </div>
         </div>
       </div>
-      <div className="about-story-section">
+      {/* <div className="about-story-section">
         <div className="about-story-border">
           <div className="about-story-main">
             <div className="about-story-img">
@@ -44,7 +46,54 @@ const About = ({ scroll, openNav, setopenNav }) => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="mentor-section">
+        <h4 className="mentor-title">Our Mentor</h4>
+        <div className="mentor-border">
+          <div className="mentor-main">
+            <div className="first-mentor">
+              <div className="mentor-img-div">
+                <img src={mentorOne} alt="" className="mentor-img" />
+              </div>
+              <div className="first-mentor-info">
+                <h4 className="mentor-name">Garrett Kostin</h4>
+                <p className="mentor-info">
+                  Garrett Kostin is the founder and director of Burma Study
+                  Center. Originally from Seattle, Washington, USA, Garrett has
+                  nearly 20 years of teaching experience and has been working
+                  closely with marginalized communities of Myanmar/Burma since
+                  2009. Garrett earned his Master of Social Work (MSW) degree
+                  from the University of Washington and holds certificates in
+                  Teaching English as a Foreign Language from both Seattle
+                  Pacific University and Chiang Mai University. Garrett
+                  currently teaches Level 3 at BSC.
+                </p>
+              </div>
+            </div>
+            <div className="second-mentor">
+              <div className="mentor-img-div">
+                <img src={mentorTwo} alt="" className="mentor-img" />
+              </div>
+              <div className="second-mentor-info">
+                <h4 className="mentor-name">Sai Sailern (Beam)</h4>
+                <p className="mentor-info">
+                  Sailern (Beam) is a full-time teacher at Burma Study Center.
+                  Born in Hsipaw, northern Shan State, Beam migrated to Thailand
+                  in 2012 after five years of teaching displaced students on the
+                  Thai-Burma border. Beam teaches Level 2 in the evening, as
+                  well as individual students in the afternoons. In his free
+                  time, Beam enjoys singing, playing piano and guitar, and
+                  gardening. Beam says: "I see the importance of English for
+                  migrant students because English can help them create new
+                  opportunities in their personal and professional lives."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="about-vision-section">
         <h4 className="about-vision-title">Vision & Mission</h4>
         <div className="about-vision-border">

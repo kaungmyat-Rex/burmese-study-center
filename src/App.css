@@ -153,7 +153,6 @@
 }
 
 .nav-section-version-show {
-  height: 60px;
   transition: 500ms ease-in;
 }
 
@@ -691,7 +690,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .about-border {
@@ -812,6 +811,115 @@
 
 ---------
 
+--------- about-mentor-section
+------
+
+---------
+------
+
+-------------- */
+
+.mentor-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+
+.mentor-title {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+  margin: 50px 0px 100px 0px;
+}
+
+.mentor-border {
+  width: 90%;
+  height: auto;
+}
+
+.mentor-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-mentor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* .mentor-img-div {
+} */
+
+.mentor-img {
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-color: rgba(76, 186, 230, 0.4);
+  /* background-color: white; */
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+}
+
+.first-mentor-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  /* background-color: aqua; */
+  padding-left: 30px;
+}
+
+.mentor-name {
+  margin: 0px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.mentor-info {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-weight: 200;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+}
+
+.second-mentor {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.second-mentor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 50%;
+  /* background-color: aqua; */
+  padding-right: 30px;
+  text-align: right;
+}
+
+/*--------
+
+
+-----------
+
+------
+
+---------
+
 --------- about-vision-section
 ------
 
@@ -896,9 +1004,10 @@
 
 .contact-section {
   display: flex;
+
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .contact-border {
@@ -938,6 +1047,7 @@
 
 .form-section {
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -950,16 +1060,63 @@
 
 .form-main {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-info {
+  flex: 6;
+  display: flex;
   flex-direction: column;
+  margin-left: 130px;
+  align-items: flex-start;
+}
+
+.contact-info h4 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-info-text {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 200;
+  line-height: 2rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 70%;
+}
+
+.contact-info p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  font-family: "Open Sans", sans-serif;
+
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #ffffff;
 }
 
 .input {
-  display: flex;
   flex: 6;
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-right: 30px;
 }
 
 .input h4 {
@@ -967,7 +1124,7 @@
   font-family: "Playfair Display", serif;
   font-weight: 200;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .input p {
@@ -1052,7 +1209,6 @@
 }
 
 .map {
-  flex: 6;
   background-color: #2a3962;
 
   max-width: 100%;
@@ -1271,6 +1427,7 @@
 ------
 
 -------------- */
+
   .about-story-section {
     padding-top: 0px;
   }
@@ -1289,6 +1446,49 @@
   .about-story-img {
     padding-top: 50px;
     max-width: 320px;
+  }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-mentor-section
+------
+
+---------
+------
+
+-------------- */
+
+  .first-mentor {
+    flex-direction: column;
+  }
+
+  .mentor-img {
+    border-radius: 10px;
+  }
+
+  .first-mentor-info {
+    max-width: 90%;
+
+    padding-left: 0px;
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  .second-mentor {
+    flex-direction: column;
+  }
+  .second-mentor-info {
+    max-width: 90%;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-top: 30px;
+    text-align: left;
   }
   /*--------
 
@@ -1344,6 +1544,14 @@
     text-align: center;
   }
 
+  .contact-info {
+    margin-left: 30px;
+  }
+
+  .contact-info-text {
+    max-width: 100%;
+  }
+
   .contact-main h4 {
     font-size: 2.2rem;
     right: unset;
@@ -1362,6 +1570,11 @@
   .iframe-map {
     width: 100%;
     height: 500px;
+  }
+
+  .input {
+    align-items: center;
+    margin-right: 0px;
   }
 
   .map {
@@ -1559,6 +1772,7 @@
 ------
 
 -------------- */
+
   .about-story-section {
     padding-top: 0px;
   }
@@ -1579,6 +1793,50 @@
     padding-top: 50px;
     max-width: 520px;
   }
+  /*--------
+
+
+-----------
+
+------
+
+---------
+
+--------- about-mentor-section
+------
+
+---------
+------
+
+-------------- */
+
+  .first-mentor {
+    flex-direction: column;
+  }
+
+  .mentor-img {
+    border-radius: 10px;
+  }
+
+  .first-mentor-info {
+    max-width: 90%;
+
+    padding-left: 0px;
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  .second-mentor {
+    flex-direction: column;
+  }
+  .second-mentor-info {
+    max-width: 90%;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-top: 30px;
+    text-align: left;
+  }
+
   /*--------
 
 
@@ -1615,12 +1873,25 @@
     text-align: center;
   }
 
+  .contact-info {
+    margin-left: 30px;
+  }
+
+  .contact-info-text {
+    max-width: 100%;
+  }
+
   .contact-main h4 {
     font-size: 2.2rem;
     right: unset;
     top: unset;
     left: unset;
     text-align: center;
+  }
+
+  .input {
+    align-items: center;
+    margin-right: 0px;
   }
 
   .form-main {
@@ -1788,6 +2059,12 @@
   .about-vision-border {
     width: 95%;
   }
+
+  .first-mentor-info,
+  .second-mentor-info {
+    max-width: 90%;
+  }
+
   /********************************************** contact page ************
 ******************************************************************************************************************/
   .contact-main {
@@ -1812,6 +2089,10 @@
   .iframe-map {
     width: 100%;
     height: 500px;
+  }
+
+  .input {
+    align-items: center;
   }
 }
 
