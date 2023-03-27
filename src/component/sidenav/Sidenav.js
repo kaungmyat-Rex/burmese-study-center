@@ -71,7 +71,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               textDecoration: "none",
               borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
-            to={"/"}
+            to={"/library"}
             onClick={() => closeNav()}
           >
             {" "}
@@ -103,7 +103,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               textDecoration: "none",
               borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
-            to={"/"}
+            to={"/feedback"}
             onClick={() => closeNav()}
           >
             {" "}

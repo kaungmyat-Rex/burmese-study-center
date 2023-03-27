@@ -16,6 +16,7 @@ import Sidenav from "../component/sidenav/Sidenav";
 import useScroll from "../component/scrollTop";
 const Home = ({ scroll, openNav, setopenNav }) => {
   useScroll();
+
   return (
     <>
       <div className="bg-section">
@@ -160,8 +161,12 @@ const Home = ({ scroll, openNav, setopenNav }) => {
           </div>
         </div>
         <div className="feedback-btn">
-          <ButtonFeedback viewmore={"View Student Reviews"} />
-          <ButtonFeedbacktwo giveFeed={"Write Your Reviews"} />
+          <div>
+            <ButtonFeedback viewmore={"View Student Reviews"} />
+          </div>
+          <div>
+            <ButtonFeedbacktwo giveFeed={"Write Your Reviews"} />
+          </div>
         </div>
       </div>
       <Footer />

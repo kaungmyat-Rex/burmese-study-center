@@ -40,7 +40,10 @@ export const Nav = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="library">
             {" "}
-            <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
+            <Link
+              to={"/library"}
+              style={{ color: "unset", textDecoration: "none" }}
+            >
               Library
             </Link>
           </p>
@@ -108,7 +111,10 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="library">
             {" "}
-            <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
+            <Link
+              to={"/library"}
+              style={{ color: "unset", textDecoration: "none" }}
+            >
               Library
             </Link>
           </p>
@@ -123,7 +129,10 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="feedback">
             {" "}
-            <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
+            <Link
+              to={"/feedback"}
+              style={{ color: "unset", textDecoration: "none" }}
+            >
               Feedbacks
             </Link>
           </p>
