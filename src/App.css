@@ -1280,7 +1280,7 @@
 .library-input button {
   max-width: 100px;
   width: 100%;
-  height: 50px;
+  height: 55px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   border: none;
@@ -1423,6 +1423,185 @@
 
 .fb-input-section {
   background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  border-bottom: 2px solid rgb(144, 144, 144, 0.1);
+}
+
+.fb-input-title {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+}
+
+.fb-input-border {
+  width: 90%;
+}
+
+.fb-input-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb-input-warning {
+  /* color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  max-width: 400px;
+  font-weight: 100;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-size: 0.9rem;
+  text-align: center; */
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 20px 20px 30px;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+}
+
+.fb-warning-title {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.fb-warning-bar {
+  max-width: 50px;
+  height: 5px;
+  background-color: rgb(105, 105, 255);
+  width: 100%;
+}
+
+.fb-warning-text {
+  max-width: 400px;
+  width: 100%;
+  color: rgb(174, 174, 174);
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 24px;
+}
+
+.fb-input-bar {
+  width: 2px;
+  height: 300px;
+  background-color: #373737;
+  margin: 0px 50px 0px 50px;
+}
+
+.fb-input-form {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 400px;
+  height: auto;
+
+  width: 100%;
+}
+
+.fb-input-form p {
+  color: rgb(115, 115, 115);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin: 0px 0px 5px 0px;
+}
+
+.fb-form-name {
+  width: 100%;
+  height: 50px;
+  background-color: #343434;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+.fb-form-name::placeholder {
+  color: rgb(115, 115, 115);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+
+  text-indent: 20px;
+}
+.fb-form-name:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(105, 105, 255);
+}
+.fb-form-select {
+  width: 100%;
+  height: 50px;
+  background-color: #343434;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+.fb-form-select:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(105, 105, 255);
+}
+
+.fb-form-reviews {
+  width: 100%;
+  height: 120px;
+  background-color: #343434;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-indent: 20px;
+  margin-bottom: 2;
+}
+
+.fb-form-reviews:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(105, 105, 255);
+}
+
+.fb-form-reviews::placeholder {
+  color: rgb(115, 115, 115);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.fb-form-btn {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(49, 49, 146);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.fb-form-btn:hover {
+  background-color: rgb(31, 31, 90);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1804,6 +1983,31 @@
   .library-main p {
     font-size: 0.7rem;
   }
+
+  /********************************************** Feedback page ************
+******************************************************************************************************************/
+  .fb-input-border {
+    width: 90%;
+  }
+  .feed-btn-gp {
+    flex-direction: column;
+  }
+
+  .fb-input-main {
+    flex-direction: column;
+  }
+
+  .fb-form-select {
+    height: 60px;
+  }
+
+  .fb-input-bar {
+    display: none;
+  }
+
+  .fb-input-form {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
@@ -2125,6 +2329,32 @@
     width: 100%;
     height: 500px;
   }
+
+  /********************************************** Feedback page ************
+******************************************************************************************************************/
+
+  .fb-border {
+    width: 100%;
+  }
+
+  .fb-main {
+    gap: 40px;
+  }
+
+  .fb-info {
+    max-width: 250px;
+  }
+  .fb-input-main {
+    flex-direction: column;
+  }
+
+  .fb-input-bar {
+    display: none;
+  }
+
+  .fb-input-form {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 845px) and (min-width: 769px) {
@@ -2159,6 +2389,17 @@
   }
   .hamburgar {
     display: block;
+  }
+  .fb-border {
+    width: 100%;
+  }
+
+  .fb-main {
+    gap: 40px;
+  }
+
+  .fb-info {
+    max-width: 250px;
   }
 }
 

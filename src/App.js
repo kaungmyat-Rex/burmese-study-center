@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -6,11 +6,22 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Library from "./pages/Library";
 import Feedback from "./pages/Feedback";
+import { db } from "./component/firebase";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  doc,
+  deleteDoc,
+} from "firebase/firestore";
 
 function App() {
   const [scroll, getscroll] = useState(false);
   // const [current, setcurrent] = useState(0);
   const [openNav, setopenNav] = useState(false);
+  const userCollection = collection(db, "reviews");
+
+  const [datareviews, setdataReviews] = useState([]);
   // const [prev, setprev] = useState(200);
 
   // useEffect(() => {
@@ -23,6 +34,15 @@ function App() {
   //     }
   //   };
   // }, [current]);
+
+  useEffect(() => {
+    const getreviews = async () => {
+      const data = await getDocs(userCollection);
+
+      setdataReviews(data.docs.map((e) => ({ ...e.data(), id: e.id })));
+    };
+    getreviews();
+  }, []);
 
   return (
     <div className="App">
@@ -71,6 +91,7 @@ function App() {
                 scroll={scroll}
                 openNav={openNav}
                 setopenNav={setopenNav}
+                datareviews={datareviews}
               />
             }
           />

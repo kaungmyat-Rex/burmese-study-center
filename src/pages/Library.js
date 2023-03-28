@@ -1,7 +1,10 @@
 import React from "react";
 import { NavVersion } from "../component/Nav";
 import Sidenav from "../component/sidenav/Sidenav";
+import Footer from "../component/footer/Footer";
+import useScroll from "../component/scrollTop";
 const Library = ({ scroll, openNav, setopenNav }) => {
+  useScroll();
   return (
     <>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
@@ -20,6 +23,7 @@ const Library = ({ scroll, openNav, setopenNav }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
