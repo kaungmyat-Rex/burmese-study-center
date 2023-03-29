@@ -19,6 +19,7 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
+import { WarningModel, SuccessModel } from "../component/models/Models";
 
 const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
   const userCollection = collection(db, "reviews");
@@ -27,6 +28,10 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
   const [info, setInfo] = useState("");
   const [datafeedback, setDatafeedback] = useState([]);
   const [shouldupdate, setshouldupdate] = useState(false);
+  const [disbtn, setDisbtn] = useState(false);
+  const [warningtext, setWarningtext] = useState("");
+  const [warningModel, setWarningModel] = useState(false);
+  const [successModel, setSuccessModel] = useState(false);
 
   let date = new Date();
   let day = date.getDate();
@@ -34,25 +39,45 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
   let year = date.getFullYear();
   let fullDate = `${day}.${month}.${year}.`;
 
+  const timeoutfalse = () => {
+    setSuccessModel(false);
+  };
+
   //Submit Reviews function to the firebase
   const submitReviews = async () => {
-    await addDoc(userCollection, {
-      name: name,
-      rating: rating,
-      info: info,
-      uploadDate: fullDate,
-    })
-      .then(() => {
-        alert("Your Reviews posted");
-        setshouldupdate(!shouldupdate);
+    if (name === "") {
+      setWarningModel(true);
+      setWarningtext("Name");
+    } else if (rating === "") {
+      setWarningModel(true);
+      setWarningtext("Rating");
+    } else if (info === "") {
+      setWarningModel(true);
+      setWarningtext("Info");
+    } else {
+      await addDoc(userCollection, {
+        name: name,
+        rating: rating,
+        info: info,
+        uploadDate: fullDate,
       })
-      .catch((error) => {
-        alert(error);
-      });
+        .then(() => {
+          setshouldupdate(!shouldupdate);
+          setDisbtn(true);
+          localStorage.setItem("disbtn", "true");
+          setSuccessModel(true);
+          setTimeout(timeoutfalse, 3000);
+        })
+        .catch((error) => {
+          alert(error);
+        });
+    }
   };
 
   //UseEffect for get reviews from firebase
   useEffect(() => {
+    const isSubmittedFromStorage = localStorage.getItem("disbtn") === "true";
+    setDisbtn(isSubmittedFromStorage);
     const getreviews = async () => {
       const data = await getDocs(userCollection);
 
@@ -73,6 +98,11 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
     <div>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
       <Sidenav openNav={openNav} setopenNav={setopenNav} />
+      <WarningModel
+        warningtext={warningtext}
+        warningModel={warningModel}
+        setWarningModel={setWarningModel}
+      />
       <div className="fb-section">
         <h4 className="fb-main-title">Student Feedback</h4>
         <div className="fb-border">
@@ -149,7 +179,11 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
                 onChange={(e) => setInfo(e.target.value)}
                 value={info}
               ></textarea>
-              <button onClick={() => submitReviews()} className="fb-form-btn">
+              <button
+                disabled={disbtn}
+                onClick={() => submitReviews()}
+                className="fb-form-btn"
+              >
                 Submit
               </button>
             </div>
@@ -157,6 +191,7 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
         </div>
       </div>
       <Footer />
+      <SuccessModel successModel={successModel} />
     </div>
   );
 };

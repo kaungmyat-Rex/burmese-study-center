@@ -1604,6 +1604,10 @@
   background-color: rgb(31, 31, 90);
 }
 
+.fb-form-btn:disabled {
+  background-color: rgb(53, 53, 57);
+}
+
 @media only screen and (max-width: 600px) {
   .nav-section {
     background-color: #252525;
