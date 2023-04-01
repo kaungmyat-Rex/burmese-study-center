@@ -24,3 +24,11 @@ export const ButtonFeedbackthree = ({ moreevent }) => {
     </p>
   );
 };
+
+export const ButtonMentor = ({ mentorMore }) => {
+  return (
+    <p className="example_t" target="_blank" rel="nofollow">
+      <span>{mentorMore}</span>
+    </p>
+  );
+};

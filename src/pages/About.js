@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavVersion } from "../component/Nav";
 import Sidenav from "../component/sidenav/Sidenav";
-import aboutImg from "../img/story.JPG";
+import mentordata from "../component/fakedata";
 import { TbTargetArrow } from "react-icons/tb";
 import { TiLightbulb } from "react-icons/ti";
 import { AiOutlineTrophy } from "react-icons/ai";
 import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
-import mentorOne from "../img/Garrett-png.png";
-import mentorTwo from "../img/Sai-png.png";
+import { ButtonMentor } from "../component/button/ButtonFeedback";
+import { MentorModel } from "../component/models/Models";
 
 const About = ({ scroll, openNav, setopenNav }) => {
   useScroll();
+
+  const [mentorModel, setmentorModel] = useState(false);
+  const [mentorId, setMentorId] = useState(null);
+
+  const openMentorModel = (id) => {
+    setmentorModel(true);
+    setMentorId(id);
+  };
+
   return (
     <>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
       <Sidenav openNav={openNav} setopenNav={setopenNav} />
+      <MentorModel
+        mentorId={mentorId}
+        setmentorModel={setmentorModel}
+        mentorModel={mentorModel}
+      />
       <div className="about-section">
         <div className="about-border">
           <div className="about-main">
@@ -52,7 +66,30 @@ const About = ({ scroll, openNav, setopenNav }) => {
         <h4 className="mentor-title">Our Mentor</h4>
         <div className="mentor-border">
           <div className="mentor-main">
-            <div className="first-mentor">
+            {mentordata.map((e) => (
+              <div className="mentor-list" key={e.id}>
+                <div className="mentor-list-body">
+                  <img className="mentor-list-image" src={e.image} alt="" />
+                  <div className="mentor-list-info">
+                    <h4 className="mentor-list-name">{e.name}</h4>
+                    <p className="mentor-list-bar"></p>
+                    <p className="mentor-list-carrier">{e.carrier}</p>
+                    <p className="mentor-list-gmail">{e.gmail}</p>
+                    <p className="mentor-list-info">
+                      {e.info.slice(0, 100)} ......
+                    </p>
+                  </div>
+                </div>
+                <div
+                  onClick={() => openMentorModel(e.id)}
+                  style={{ marginBottom: "15px", marginTop: "0px" }}
+                >
+                  <ButtonMentor mentorMore={"See More"} />
+                </div>
+              </div>
+            ))}
+
+            {/* <div className="first-mentor">
               <div className="mentor-img-div">
                 <img src={mentorOne} alt="" className="mentor-img" />
               </div>
@@ -89,7 +126,7 @@ const About = ({ scroll, openNav, setopenNav }) => {
                   opportunities in their personal and professional lives."
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

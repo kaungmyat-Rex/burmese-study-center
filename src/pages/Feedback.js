@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavVersion } from "../component/Nav";
 import Sidenav from "../component/sidenav/Sidenav";
-import fakedata from "../component/fakedata";
+
 import { BsEmojiFrown } from "react-icons/bs";
 import { BsEmojiSmile } from "react-icons/bs";
 import { BsEmojiSunglasses } from "react-icons/bs";
