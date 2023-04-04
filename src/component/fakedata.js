@@ -1,9 +1,9 @@
-import mentorOne from "../img/Garrett-png.png";
-import mentorTwo from "../img/SaiSail-png.png";
-import mentorThree from "../img/Sai-png.png";
-import mentorFour from "../img/Sainaw-png.png";
-import mentorFive from "../img/makin-png.png";
-import mentorSix from "../img/yoomwan-png.png";
+import mentorOne from "../img/Garrett-ong.JPG";
+import mentorTwo from "../img/SaiSail-png.jpg";
+import mentorThree from "../img/Sai-png.jpg";
+import mentorFour from "../img/Sainaw-png.jpg";
+import mentorFive from "../img/makin-png.jpg";
+import mentorSix from "../img/yoomwan-png.jpg";
 
 const mentordata = [
   {
