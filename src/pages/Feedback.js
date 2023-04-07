@@ -12,13 +12,7 @@ import {
 import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
 import { db } from "../component/firebase";
-import {
-  collection,
-  getDocs,
-  addDoc,
-  doc,
-  deleteDoc,
-} from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import { WarningModel, SuccessModel } from "../component/models/Models";
 
 const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
@@ -191,7 +185,7 @@ const Feedback = ({ scroll, openNav, setopenNav, datareviews }) => {
         </div>
       </div>
       <Footer />
-      <SuccessModel successModel={successModel} />
+      <SuccessModel successModel={successModel} content={"Review"} />
     </div>
   );
 };

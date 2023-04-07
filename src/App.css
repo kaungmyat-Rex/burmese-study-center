@@ -4,12 +4,13 @@
   box-sizing: border-box;
   overflow-x: hidden;
 
-  background: rgb(47, 69, 129);
+  /* background: rgb(31, 62, 122);
   background: linear-gradient(
-    90deg,
-    rgba(47, 69, 129, 1) 0%,
-    rgba(42, 73, 161, 1) 100%
-  );
+    253deg,
+    rgba(31, 62, 122, 1) 0%,
+    rgba(31, 59, 111, 1) 100%
+  ); */
+  background-color: #162b53;
 }
 
 /*--------
@@ -53,7 +54,7 @@
 }
 
 .nav-main {
-  width: 90%;
+  width: 95%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -93,7 +94,6 @@
 .about,
 .library,
 .program,
-.contact,
 .feedback {
   margin-right: 40px;
   font-weight: 900;
@@ -114,6 +114,16 @@
   text-decoration-thickness: 0.2rem;
   text-decoration-color: rgb(105, 105, 255);
   transition: 200ms;
+}
+
+.contact {
+  margin-right: 30px;
+  font-weight: 900;
+
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 300ms;
+  letter-spacing: 0.2;
 }
 
 .donate {
@@ -373,7 +383,7 @@
   /* border: 7px solid #2f4581; */
   border-radius: 5px;
 
-  box-shadow: rgba(255, 255, 255, 0.4) 14px 14px;
+  box-shadow: rgba(255, 255, 255, 0.1) 12px 12px;
 }
 
 /*--------
@@ -434,12 +444,13 @@
 .event-one {
   display: flex;
   flex-direction: column;
-  background: rgb(47, 69, 129);
+  /* background: rgb(31, 62, 122);
   background: linear-gradient(
-    90deg,
-    rgba(47, 69, 129, 1) 0%,
-    rgba(42, 73, 161, 1) 100%
-  );
+    253deg,
+    rgba(31, 62, 122, 1) 0%,
+    rgba(31, 59, 111, 1) 100%
+  ); */
+  background-color: #162b53;
   justify-content: center;
   align-items: center;
 }
@@ -487,12 +498,13 @@
 .event-two {
   display: flex;
   flex-direction: column-reverse;
-  background: rgb(47, 69, 129);
+  /* background: rgb(31, 62, 122);
   background: linear-gradient(
-    90deg,
-    rgba(47, 69, 129, 1) 0%,
-    rgba(42, 73, 161, 1) 100%
-  );
+    253deg,
+    rgba(31, 62, 122, 1) 0%,
+    rgba(31, 59, 111, 1) 100%
+  ); */
+  background-color: #162b53;
   justify-content: center;
   align-items: center;
 }
@@ -540,12 +552,13 @@
 .event-three {
   display: flex;
   flex-direction: column;
-  background: rgb(47, 69, 129);
+  /* background: rgb(31, 62, 122);
   background: linear-gradient(
-    90deg,
-    rgba(47, 69, 129, 1) 0%,
-    rgba(42, 73, 161, 1) 100%
-  );
+    253deg,
+    rgba(31, 62, 122, 1) 0%,
+    rgba(31, 59, 111, 1) 100%
+  ); */
+  background-color: #162b53;
   justify-content: center;
   align-items: center;
 }
@@ -611,6 +624,8 @@
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  /* background-color: rgba(31, 62, 122, 1); */
+  background-color: #162b53;
 }
 
 .testimontal {
@@ -636,9 +651,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.testi-one {
+.home-fb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 50px 20px 30px 20px;
+  margin: 20px 10px 20px 10px;
+}
+
+/* .testi-one {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -673,7 +701,7 @@
   color: #c3c3c3;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-}
+} */
 
 .feedback-btn {
   display: flex;
@@ -837,7 +865,7 @@
 }
 
 .mentor-border {
-  width: 80%;
+  width: 95%;
   height: auto;
 }
 
@@ -877,10 +905,10 @@
   width: 100%;
   height: 250px;
   /* background-color: #252525; */
-  object-fit: cover;
+  object-fit: contain;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: hsl(224, 40%, 26%, 0.8);
+  background-color: hsl(224, 55%, 15%);
 }
 
 .mentor-list-info {
@@ -1278,7 +1306,13 @@
 }
 
 .form-btn-div {
+  background-color: unset;
   margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0px;
+  border: none;
+
+  max-height: 60px;
 }
 
 .iframe-map {
@@ -1449,7 +1483,8 @@
   align-items: center;
   position: absolute;
   gap: 10px;
-  background-color: rgba(42, 73, 161, 1);
+  /* background-color: rgba(31, 62, 122, 1); */
+  background-color: #162b53;
   margin: 0px;
   padding: 0px 10px 0px 10px;
   left: 20px;
@@ -1834,14 +1869,14 @@
   .feedback-main {
     flex-direction: column;
   }
-
+  /* 
   .testi-one {
     margin: 30px;
   }
 
   .testi-one p {
     padding: 0px 24px 0px 24px;
-  }
+  } */
 
   .feedback-btn {
     flex-direction: column;
@@ -2238,6 +2273,11 @@
   }
   .testi-one {
     margin: 30px 100px 20px 100px;
+  }
+
+  .home-fb {
+    max-width: 400px;
+    width: 100%;
   }
 
   /********************************************** About page ************

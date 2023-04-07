@@ -54,7 +54,7 @@
 .policy-main {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .policy-covid,
@@ -86,7 +86,7 @@
 .policy-covid p,
 .policy-student p,
 .policy-library p {
-  max-width: 250px;
+  max-width: 350px;
   width: 100%;
   color: rgb(174, 174, 174);
   text-align: left;
@@ -166,6 +166,7 @@
   .footer-menu p {
     padding: 0px 20px 0px 20px;
   }
+
   .policy-covid,
   .policy-student,
   .policy-library,

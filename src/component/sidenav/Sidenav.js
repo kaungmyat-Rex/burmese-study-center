@@ -5,7 +5,7 @@ import { FiAlertCircle } from "react-icons/fi";
 import { RiMiniProgramLine } from "react-icons/ri";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { AiOutlineContacts } from "react-icons/ai";
-import { MdOutlineFeedback } from "react-icons/md";
+
 import { Link } from "react-router-dom";
 
 const Sidenav = ({ openNav, setopenNav }) => {
@@ -61,7 +61,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
             {" "}
             <p>
               <RiMiniProgramLine className="nav-icon" />
-              <span>Program</span>
+              <span>Programs</span>
             </p>
           </Link>
           <Link
@@ -77,7 +77,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
             {" "}
             <p>
               <MdOutlineLibraryBooks className="nav-icon" />
-              <span>Library</span>
+              <span>Library Catalog</span>
             </p>
           </Link>
           <Link
@@ -96,23 +96,6 @@ const Sidenav = ({ openNav, setopenNav }) => {
               <span>Contact Us</span>
             </p>
           </Link>
-          <Link
-            style={{
-              width: "100%",
-              color: "white",
-              textDecoration: "none",
-              borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-            }}
-            to={"/feedback"}
-            onClick={() => closeNav()}
-          >
-            {" "}
-            <p>
-              <MdOutlineFeedback className="nav-icon" />
-              <span>Feedbacks</span>
-            </p>
-          </Link>
-          <h4 className="sidenav-donate">Donate Us</h4>
         </div>
       </div>
     </div>

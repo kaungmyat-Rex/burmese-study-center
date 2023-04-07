@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavVersion } from "../component/Nav";
 import { BsArrowDown } from "react-icons/bs";
 import { BsChatRightQuote } from "react-icons/bs";
+import { BsEmojiFrown } from "react-icons/bs";
+import { BsEmojiSmile } from "react-icons/bs";
+import { BsEmojiSunglasses } from "react-icons/bs";
 import bsc from "../img/about.jpg";
 import eventOne from "../img/e2.JPG";
 import eventTwo from "../img/e1.JPG";
@@ -14,8 +17,23 @@ import {
 import Footer from "../component/footer/Footer";
 import Sidenav from "../component/sidenav/Sidenav";
 import useScroll from "../component/scrollTop";
+import { db } from "../component/firebase";
+import { collection, getDocs, addDoc } from "firebase/firestore";
+
 const Home = ({ scroll, openNav, setopenNav }) => {
+  const [feedback, setFeedback] = useState([]);
+  const userCollection = collection(db, "reviews");
   useScroll();
+
+  //UseEffect for get reviews from firebase
+  useEffect(() => {
+    const getreviews = async () => {
+      const data = await getDocs(userCollection);
+
+      setFeedback(data.docs.map((e) => ({ ...e.data(), id: e.id })));
+    };
+    getreviews();
+  }, []);
 
   return (
     <>
@@ -119,7 +137,26 @@ const Home = ({ scroll, openNav, setopenNav }) => {
         <h4 className="feedback-title">Student Feedbacks</h4>
         <div className="feedback-border">
           <div className="feedback-main">
-            <div className="testi-one">
+            {feedback.slice(-3).map((e) => (
+              <div className="home-fb" key={e.id}>
+                <div className="fb-title">
+                  <span className="fb-icon">
+                    {e.rating === "Amazing" ? (
+                      <BsEmojiSunglasses className="fb-icon" />
+                    ) : e.rating === "Good" ? (
+                      <BsEmojiSmile className="fb-icon" />
+                    ) : (
+                      <BsEmojiFrown className="fb-icon" />
+                    )}
+                  </span>
+                  <p className="fb-rate">{e.rating}</p>
+                </div>
+                <p className="fb-date">{e.uploadDate}</p>
+                <p className="fb-info">{e.info.slice(0, 100)}...see more</p>
+                <span className="fb-author">{e.name}</span>
+              </div>
+            ))}
+            {/* <div className="testi-one">
               <h4>
                 <BsChatRightQuote className="testi-icon" />
                 <span>Amazing</span>
@@ -157,7 +194,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
                 consectetur blanditiis autem corrupti magni beatae! Iure!
               </p>
               <p style={{ fontSize: "1.2rem" }}>Forrest Gump</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="feedback-btn">

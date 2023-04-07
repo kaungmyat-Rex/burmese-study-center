@@ -1,14 +1,41 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { NavVersion } from "../component/Nav";
 import Sidenav from "../component/sidenav/Sidenav";
-
+import { SuccessModel } from "../component/models/Models";
 import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
 import { MdPhoneIphone } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 const Contact = ({ scroll, openNav, setopenNav }) => {
+  const form = useRef();
+  const [openModel, setOpenModel] = useState(false);
   useScroll();
+
+  const timeOut = () => {
+    setOpenModel(false);
+  };
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_uxr4nry",
+        "template_wmnkznc",
+        form.current,
+        "N5Rft8vLfPeU2rByh"
+      )
+      .then(
+        (result) => {
+          setOpenModel(true);
+          setTimeout(timeOut, 3000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
@@ -45,25 +72,30 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
                 </span>
               </p>
             </div>
-            <div className="input">
+            <form className="input" ref={form}>
               <h4>Send us a message</h4>
 
               <div className="nameEmail">
-                <input type="text" placeholder="  Name" />
-                <input type="text" placeholder="  Email" />
+                <input type="text" name="user_name" placeholder="  Name" />
+                <input type="email" name="user_email" placeholder="  Email" />
               </div>
               <input className="subject" type="text" placeholder="  Subject" />
               <textarea
+                name="message"
                 placeholder="  
               
                 Message"
               ></textarea>
-              <div className="form-btn-div">
+              <button
+                className="form-btn-div"
+                onClick={() => sendEmail()}
+                type="button"
+              >
                 <p className="example_f" target="_blank" rel="nofollow">
                   <span>Send Message!</span>
                 </p>
-              </div>
-            </div>
+              </button>
+            </form>
           </div>
           <div className="map">
             {/* <MapContainer /> */}
@@ -76,6 +108,7 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
         </div>
       </div>
       <Footer />
+      <SuccessModel successModel={openModel} content={"Form"} />
     </>
   );
 };

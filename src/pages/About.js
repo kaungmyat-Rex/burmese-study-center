@@ -69,7 +69,7 @@ const About = ({ scroll, openNav, setopenNav }) => {
             {mentordata.map((e) => (
               <div className="mentor-list" key={e.id}>
                 <div className="mentor-list-body">
-                  <img className="mentor-list-image" src={e.image} alt="" />
+                  <img className="mentor-list-image" src={e.imageNoBg} alt="" />
                   <div className="mentor-list-info">
                     <h4 className="mentor-list-name">{e.name}</h4>
                     <p className="mentor-list-bar"></p>

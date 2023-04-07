@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="footer-bar"></div>
             <div className="policy-main">
-              <div className="policy-covid">
+              {/* <div className="policy-covid">
                 <h4>Covid-19 Update</h4>
                 <div className="policy-bar"></div>
                 <p>
@@ -31,7 +31,7 @@ const Footer = () => {
                   in-person classes in August 2022. All students for on-site
                   classes are required to be fully vaccinated against COVID-19.
                 </p>
-              </div>
+              </div> */}
               <div className="policy-student">
                 <h4>Student Policies</h4>
                 <div className="policy-bar"></div>

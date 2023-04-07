@@ -45,7 +45,7 @@ export const WarningModel = ({
   );
 };
 
-export const SuccessModel = ({ successModel }) => {
+export const SuccessModel = ({ successModel, content }) => {
   return (
     <div
       className={`success-section ${
@@ -54,7 +54,7 @@ export const SuccessModel = ({ successModel }) => {
     >
       <div className="success-main">
         <AiFillCheckCircle className="success-icon" />
-        <p className="success-info">Review submit completed!</p>
+        <p className="success-info">{content} submit completed!</p>
       </div>
     </div>
   );
