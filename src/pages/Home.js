@@ -49,7 +49,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               Migrate Educatiom and Empowerment . Public Library . Chiang Mai,
               Thailand
             </p>
-            <button>Contact Us</button>
+            {/* <button>Contact Us</button> */}
             <a href="#provide">
               <BsArrowDown className="arrow-down" />
             </a>
@@ -93,10 +93,10 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               <div className="eOne-text">
                 <h4>We Study Together</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                  nulla laudantium veritatis sunt pariatur nostrum sint numquam
-                  iure rerum, perspiciatis, earum excepturi minima voluptates
-                  esse labore quod? Magnam, assumenda labore.
+                  BSC brings students from diverse backgrounds together to share
+                  knowledge and build friendships. This program not only fosters
+                  a sense of community, but also promotes inclusion and
+                  diversity in education.
                 </p>
               </div>
             </div>
@@ -106,10 +106,10 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               <div className="eTwo-text">
                 <h4>We Study Safe</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                  nulla laudantium veritatis sunt pariatur nostrum sint numquam
-                  iure rerum, perspiciatis, earum excepturi minima voluptates
-                  esse labore quod? Magnam, assumenda labore.
+                  BSC prioritizes the safety and well-being of students while
+                  also promoting learning and growth. BSC creates a safe space
+                  for students to connect, share their experiences, and support
+                  each other.
                 </p>
               </div>
             </div>
@@ -119,10 +119,9 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               <div className="eThree-text">
                 <h4>We Study Happly</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                  nulla laudantium veritatis sunt pariatur nostrum sint numquam
-                  iure rerum, perspiciatis, earum excepturi minima voluptates
-                  esse labore quod? Magnam, assumenda labore.
+                  BSC focuses on promoting happiness and well-being among
+                  students. Through activities and events, BSC creates a fun and
+                  engaging learning environment where students can thrive.
                 </p>
               </div>
             </div>

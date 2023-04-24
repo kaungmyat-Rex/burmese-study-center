@@ -63,7 +63,7 @@ const About = ({ scroll, openNav, setopenNav }) => {
       </div> */}
 
       <div className="mentor-section">
-        <h4 className="mentor-title">Our Mentor</h4>
+        <h4 className="mentor-title">Staff</h4>
         <div className="mentor-border">
           <div className="mentor-main">
             {mentordata.map((e) => (
@@ -74,7 +74,7 @@ const About = ({ scroll, openNav, setopenNav }) => {
                     <h4 className="mentor-list-name">{e.name}</h4>
                     <p className="mentor-list-bar"></p>
                     <p className="mentor-list-carrier">{e.carrier}</p>
-                    <p className="mentor-list-gmail">{e.gmail}</p>
+                    {/* <p className="mentor-list-gmail">{e.gmail}</p> */}
                     <p className="mentor-list-info">
                       {e.info.slice(0, 100)} ......
                     </p>
@@ -140,9 +140,10 @@ const About = ({ scroll, openNav, setopenNav }) => {
               <h4 className="vision-one-title">Our Mission</h4>
               <p className="vision-bar"></p>
               <p className="vision-text-one">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nesciunt dolores laboriosam ex quasi, saepe maxime dolore
-                suscipit, mollitia r
+                To provide accessible and quality education for migrants and
+                displaced persons, empowering them with the knowledge and skills
+                they need to rebuild their lives and contribute to their
+                communities.
               </p>
             </div>
             <div className="vision-two">
@@ -150,8 +151,9 @@ const About = ({ scroll, openNav, setopenNav }) => {
               <h4 className="vision-two-title">Our Vision</h4>
               <p className="vision-bar"></p>
               <p className="vision-text-two">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nesciunt dolores laboriosa
+                To become a leading platform for migrant education, creating a
+                global community of learners who have access to innovative and
+                personalized learning experiences
               </p>
             </div>
             <div className="vision-three">
@@ -159,9 +161,8 @@ const About = ({ scroll, openNav, setopenNav }) => {
               <h4 className="vision-three-title">Our Values</h4>
               <p className="vision-bar"></p>
               <p className="vision-text-three">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nesciunt dolores laboriosam ex quasi, saepe maxime dolore
-                suscipit, mollitia laboriosam ex quasi, saepe
+                promoting diversity and inclusivity by providing accessible
+                education to people of all backgrounds and circumstances.
               </p>
             </div>
           </div>

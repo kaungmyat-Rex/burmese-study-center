@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="policy-bar"></div>
                 <p>
                   <MdPhoneIphone className="footer-icon" />
-                  <span>+656-8982749</span>
+                  <span>093 625 4182</span>
                 </p>
                 <p>
                   <MdOutlineLocationOn className="footer-icon2" />
@@ -69,8 +69,8 @@ const Footer = () => {
             </div>
             <div className="social-icon">
               <FaFacebookF className="facebook" />
-              <FaInstagram className="insta" />
-              <FaTwitter className="twitar" />
+              {/* <FaInstagram className="insta" />
+              <FaTwitter className="twitar" /> */}
               <MdOutlineEmail className="mail" />
             </div>
           </div>

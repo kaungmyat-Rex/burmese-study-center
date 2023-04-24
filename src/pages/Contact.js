@@ -8,38 +8,70 @@ import { MdPhoneIphone } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import { WarningModel } from "../component/models/Models";
 const Contact = ({ scroll, openNav, setopenNav }) => {
   const form = useRef();
   const [openModel, setOpenModel] = useState(false);
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [validEmail, setValidEmail] = useState(false);
+  const [warningModel, setWarningModel] = useState(false);
+  const [warningtext, setWarningtext] = useState("");
   useScroll();
 
   const timeOut = () => {
     setOpenModel(false);
   };
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const handelEmail = (e) => {
+    setEmail(e.target.value);
+    setValidEmail(validateEmail(e.target.value));
+  };
+
   const sendEmail = () => {
-    emailjs
-      .sendForm(
-        "service_uxr4nry",
-        "template_wmnkznc",
-        form.current,
-        "N5Rft8vLfPeU2rByh"
-      )
-      .then(
-        (result) => {
-          setOpenModel(true);
-          setTimeout(timeOut, 3000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (email === "") {
+      setWarningModel(true);
+      setWarningtext("empty email");
+    } else if (name === "") {
+      setWarningModel(true);
+      setWarningtext("empty name");
+    } else if (validEmail === false) {
+      setWarningModel(true);
+      setWarningtext("wrong email");
+    } else {
+      emailjs
+        .sendForm(
+          "service_uxr4nry",
+          "template_wmnkznc",
+          form.current,
+          "N5Rft8vLfPeU2rByh"
+        )
+        .then(
+          (result) => {
+            setOpenModel(true);
+            setTimeout(timeOut, 3000);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
     <>
       <NavVersion scroll={scroll} openNav={openNav} setopenNav={setopenNav} />
       <Sidenav openNav={openNav} setopenNav={setopenNav} />
+      <WarningModel
+        warningModel={warningModel}
+        setWarningModel={setWarningModel}
+        warningtext={warningtext}
+      />
       <div className="contact-section">
         <div className="contact-border">
           <div className="contact-main">
@@ -58,7 +90,7 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
               </p>
               <p>
                 <MdPhoneIphone className="contact-icon" />
-                <span>+656-8982749</span>
+                <span>093 625 4182</span>
               </p>
 
               <p>
@@ -76,8 +108,20 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
               <h4>Send us a message</h4>
 
               <div className="nameEmail">
-                <input type="text" name="user_name" placeholder="  Name" />
-                <input type="email" name="user_email" placeholder="  Email" />
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="  Name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                />
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="  Email"
+                  onChange={(e) => handelEmail(e)}
+                  value={email}
+                />
               </div>
               <input className="subject" type="text" placeholder="  Subject" />
               <textarea

@@ -199,7 +199,7 @@
   align-items: center;
 
   background-color: rgb(131, 131, 131);
-  background-image: url("../src/img/bg1.JPG");
+  background-image: url("../src/img/bg2.jpg");
 
   width: 100dvw;
   height: 100dvh;
@@ -271,7 +271,7 @@
   color: #ffffff;
   font-size: 2.2rem;
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
 }
 
 /*--------
@@ -905,7 +905,7 @@
   width: 100%;
   height: 250px;
   /* background-color: #252525; */
-  object-fit: contain;
+  object-fit: cover;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background-color: hsl(224, 55%, 15%);
@@ -1975,7 +1975,7 @@
   }
   .mentor-list-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   /* .first-mentor {
@@ -2373,7 +2373,7 @@
   }
   .mentor-list-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   /* .first-mentor {
     flex-direction: column;

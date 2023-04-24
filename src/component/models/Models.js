@@ -27,7 +27,7 @@ export const WarningModel = ({
               </div>
             </div>
             <p className="warning-info">
-              You can't submit your reviews with empty{" "}
+              You can't submit your form with{" "}
               <span style={{ color: "#de5a5a" }}>{warningtext}</span> field,
               Please ,Check your form again
             </p>
@@ -80,10 +80,10 @@ export const MentorModel = ({ mentorId, setmentorModel, mentorModel }) => {
                       <MdWorkOutline className="mentorMdoel-icon" />
                       <p className="mentorModel-carrier">{e.carrier}</p>
                     </span>
-                    <span>
+                    {/* <span>
                       <MdMailOutline className="mentorMdoel-icon" />
                       <p className="mentorModel-gmail">{e.gmail}</p>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
 
