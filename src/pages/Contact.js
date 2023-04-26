@@ -75,7 +75,13 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
       <div className="contact-section">
         <div className="contact-border">
           <div className="contact-main">
-            <h4>CONTACT US</h4>
+            <h4
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              CONTACT US
+            </h4>
           </div>
         </div>
       </div>
@@ -88,23 +94,41 @@ const Contact = ({ scroll, openNav, setopenNav }) => {
                 Make an appointment to visit, please contact us or if you have
                 other request or question, don’t hesitate to use the form.
               </p>
-              <p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+              >
                 <MdPhoneIphone className="contact-icon" />
                 <span>093 625 4182</span>
               </p>
 
-              <p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 <MdOutlineEmail className="contact-icon" />
                 <span>chiangmai@burmastudy.org</span>
               </p>
-              <p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+              >
                 <MdOutlineLocationOn className="contact-icon" />
                 <span>
                   16/8 Nimmanhaemin Road, Soi 13, Chiang Mai, Thailand.
                 </span>
               </p>
             </div>
-            <form className="input" ref={form}>
+            <form
+              className="input"
+              ref={form}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               <h4>Send us a message</h4>
 
               <div className="nameEmail">

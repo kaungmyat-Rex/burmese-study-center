@@ -44,8 +44,10 @@ const Home = ({ scroll, openNav, setopenNav }) => {
 
         <div className="bg-border">
           <div className="bg-main">
-            <h4>BURMA STUDY CENTER</h4>
-            <p>
+            <h4 data-aos="fade-in" data-aos-duration="1000">
+              BURMA STUDY CENTER
+            </h4>
+            <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
               Migrate Educatiom and Empowerment . Public Library . Chiang Mai,
               Thailand
             </p>
@@ -59,7 +61,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
       <div className="provide-section" id="provide">
         <div className="provide-border">
           <div className="provide-main">
-            <div className="pv-text-gp">
+            <div className="pv-text-gp" data-aos="fade-right">
               <h4>
                 What we're <span>provide</span>
               </h4>
@@ -76,7 +78,11 @@ const Home = ({ scroll, openNav, setopenNav }) => {
                 </p>
               </div>
             </div>
-            <div className="provide-img">
+            <div
+              className="provide-img"
+              data-aos="fade-left"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img src={bsc} alt="" />
             </div>
           </div>
@@ -88,9 +94,19 @@ const Home = ({ scroll, openNav, setopenNav }) => {
         <div className="event-border">
           <div className="event-main">
             <div className="event-one">
-              <img className="eOne-img" src={eventOne} alt="" />
+              <img
+                className="eOne-img"
+                src={eventOne}
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
 
-              <div className="eOne-text">
+              <div
+                className="eOne-text"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <h4>We Study Together</h4>
                 <p>
                   BSC brings students from diverse backgrounds together to share
@@ -101,9 +117,19 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               </div>
             </div>
             <div className="event-two">
-              <img className="eTwo-img" src={eventTwo} alt="" />
+              <img
+                className="eTwo-img"
+                src={eventTwo}
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
 
-              <div className="eTwo-text">
+              <div
+                className="eTwo-text"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <h4>We Study Safe</h4>
                 <p>
                   BSC prioritizes the safety and well-being of students while
@@ -114,9 +140,19 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               </div>
             </div>
             <div className="event-three">
-              <img className="eThree-img" src={eventThree} alt="" />
+              <img
+                className="eThree-img"
+                src={eventThree}
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
 
-              <div className="eThree-text">
+              <div
+                className="eThree-text"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <h4>We Study Happly</h4>
                 <p>
                   BSC focuses on promoting happiness and well-being among
@@ -137,7 +173,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
         <div className="feedback-border">
           <div className="feedback-main">
             {feedback.slice(-3).map((e) => (
-              <div className="home-fb" key={e.id}>
+              <div className="home-fb" key={e.id} data-aos="fade-up">
                 <div className="fb-title">
                   <span className="fb-icon">
                     {e.rating === "Amazing" ? (

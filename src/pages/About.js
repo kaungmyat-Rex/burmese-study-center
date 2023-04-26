@@ -33,7 +33,13 @@ const About = ({ scroll, openNav, setopenNav }) => {
       <div className="about-section">
         <div className="about-border">
           <div className="about-main">
-            <h4>ABOUT US</h4>
+            <h4
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+            >
+              ABOUT US
+            </h4>
           </div>
         </div>
       </div>
@@ -132,10 +138,16 @@ const About = ({ scroll, openNav, setopenNav }) => {
       </div>
 
       <div className="about-vision-section">
-        <h4 className="about-vision-title">Vision & Mission</h4>
+        <h4 className="about-vision-title" data-aos="fade-up">
+          Vision & Mission
+        </h4>
         <div className="about-vision-border">
           <div className="about-vision-main">
-            <div className="vision-one">
+            <div
+              className="vision-one"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <TbTargetArrow className="vision-icon-one" />
               <h4 className="vision-one-title">Our Mission</h4>
               <p className="vision-bar"></p>
@@ -146,7 +158,11 @@ const About = ({ scroll, openNav, setopenNav }) => {
                 communities.
               </p>
             </div>
-            <div className="vision-two">
+            <div
+              className="vision-two"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <TiLightbulb className="vision-icon-two" />
               <h4 className="vision-two-title">Our Vision</h4>
               <p className="vision-bar"></p>
@@ -156,7 +172,11 @@ const About = ({ scroll, openNav, setopenNav }) => {
                 personalized learning experiences
               </p>
             </div>
-            <div className="vision-three">
+            <div
+              className="vision-three"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <AiOutlineTrophy className="vision-icon-three" />
               <h4 className="vision-three-title">Our Values</h4>
               <p className="vision-bar"></p>

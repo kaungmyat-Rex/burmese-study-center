@@ -6,6 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -14,11 +15,35 @@ const Footer = () => {
           <div className="footer-main">
             <h4 className="footer-title">BURMA STUDY CENTER</h4>
             <div className="footer-menu">
-              <p>HOME</p>
-              <p>ABOUT</p>
-              <p>LIBRARY</p>
-              <p>CONTACT</p>
-              <p style={{ borderRight: "0px" }}>FEEDBACK</p>
+              <Link to={"/"} style={{ color: "white", textDecoration: "none" }}>
+                <p>HOME</p>
+              </Link>
+              <Link
+                to={"/about"}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {" "}
+                <p>ABOUT</p>
+              </Link>
+              <Link
+                to={"/program"}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <p>PROGRAM</p>
+              </Link>
+              <Link
+                to={"/library"}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {" "}
+                <p>LIBRARY</p>
+              </Link>
+              <Link
+                to={"/contact"}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <p style={{ borderRight: "0px" }}>CONTACT</p>
+              </Link>
             </div>
             <div className="footer-bar"></div>
             <div className="policy-main">
@@ -32,7 +57,7 @@ const Footer = () => {
                   classes are required to be fully vaccinated against COVID-19.
                 </p>
               </div> */}
-              <div className="policy-student">
+              <div className="policy-student" data-aos="fade-up">
                 <h4>Student Policies</h4>
                 <div className="policy-bar"></div>
                 <p>
@@ -40,7 +65,7 @@ const Footer = () => {
                   language versions.
                 </p>
               </div>
-              <div className="policy-library">
+              <div className="policy-library" data-aos="fade-up">
                 <h4>Library Catalog</h4>
                 <div className="policy-bar"></div>
                 <p>
@@ -48,7 +73,7 @@ const Footer = () => {
                   through the library.
                 </p>
               </div>
-              <div className="policy-contact">
+              <div className="policy-contact" data-aos="fade-up">
                 <h4>Contact Us</h4>
                 <div className="policy-bar"></div>
                 <p>

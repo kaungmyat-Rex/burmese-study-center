@@ -14,7 +14,8 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   const [scroll, getscroll] = useState(false);
   // const [current, setcurrent] = useState(0);
@@ -42,8 +43,10 @@ function App() {
       setdataReviews(data.docs.map((e) => ({ ...e.data(), id: e.id })));
     };
     getreviews();
-  }, []);
 
+    AOS.init({});
+  }, []);
+  console.log("it re-rendering");
   return (
     <div className="App">
       <BrowserRouter>
