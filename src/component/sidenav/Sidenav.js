@@ -64,14 +64,15 @@ const Sidenav = ({ openNav, setopenNav }) => {
               <span>Programs</span>
             </p>
           </Link>
-          <Link
+          <a
+            href="https://catalog9.burmastudy.org/"
+            target="_blank"
             style={{
               width: "100%",
               color: "white",
               textDecoration: "none",
               borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
-            to={"/library"}
             onClick={() => closeNav()}
           >
             {" "}
@@ -79,7 +80,7 @@ const Sidenav = ({ openNav, setopenNav }) => {
               <MdOutlineLibraryBooks className="nav-icon" />
               <span>Library Catalog</span>
             </p>
-          </Link>
+          </a>
           <Link
             style={{
               width: "100%",

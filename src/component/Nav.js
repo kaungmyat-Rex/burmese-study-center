@@ -106,12 +106,13 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
           </p>
           <p className="library">
             {" "}
-            <Link
-              to={"/library"}
+            <a
+              href="https://catalog9.burmastudy.org/"
+              target="_blank"
               style={{ color: "unset", textDecoration: "none" }}
             >
               Library Catalog
-            </Link>
+            </a>
           </p>
           <p className="contact">
             {" "}
