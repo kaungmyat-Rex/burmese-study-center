@@ -32,7 +32,7 @@ const Footer = () => {
                 <p>PROGRAM</p>
               </Link>
               <Link
-                to={"/library"}
+                to={"https://catalog9.burmastudy.org/"}
                 style={{ color: "white", textDecoration: "none" }}
               >
                 {" "}

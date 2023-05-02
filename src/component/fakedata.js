@@ -83,7 +83,7 @@ const mentordata = [
     id: 8,
     name: "Fiona Boyle",
     carrier: "Teacher",
-    info: "Fiona is a CELTA-certified English teacher from Australia. She was based in Chiang Mai for one year in 2019 and began volunteering with advanced students at Burma Study Center. During COVID, she was pleased to be able to reconnect with her students online from Ireland, where she more than one year in lockdown. Since then, she has continued teaching weekly online classes, providing valuable instruction in research, public speaking, presentation skills, and professional writing for BSC students.",
+    info: "Fiona is a CELTA-certified English teacher from Ireland. She lived in Thailand for two years and was based in Chiang Mai in 2019 when she began volunteering with advanced students at Burma Study Center. During COVID, she was pleased to be able to reconnect with her students online from Ireland, where she spent more than one year in lockdown. Since then, she has moved to Australia and has continued teaching weekly online classes, providing valuable instruction in research, public speaking, presentation skills, and professional writing for BSC students.",
     gmail: "FionaBoyle@gmail.com",
     image: mentorEight,
     imageNoBg: mentorEight,
