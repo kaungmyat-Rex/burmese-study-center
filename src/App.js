@@ -46,7 +46,7 @@ function App() {
 
     AOS.init({});
   }, []);
-  console.log("it re-rendering");
+
   return (
     <div className="App">
       <BrowserRouter>

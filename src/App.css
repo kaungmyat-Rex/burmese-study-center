@@ -796,7 +796,7 @@
 }
 
 .about-story-img {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .about-story-img img {
@@ -822,7 +822,8 @@
 }
 
 .about-story-text p {
-  max-width: 450px;
+  max-width: 700px;
+
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
@@ -865,7 +866,7 @@
 }
 
 .mentor-border {
-  width: 95%;
+  width: 85%;
   height: auto;
 }
 
@@ -1949,6 +1950,10 @@
   .about-story-text p {
     line-height: 1.5rem;
   }
+  .about-story-text p {
+    text-align: left;
+  }
+
   .about-story-img {
     padding-top: 50px;
     max-width: 320px;
@@ -2635,30 +2640,32 @@
 
 -------------- */
 
-  .about-main {
-    background-position: 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .about-story-main {
+    flex-direction: column-reverse;
+  }
+
+  .about-story-text p {
+    max-width: 90%;
   }
 
   .about-story-border {
     width: 95%;
   }
-  .about-story-img {
-    max-width: 300px;
-  }
 
   .about-story-text {
     padding-left: 50px;
   }
-  .about-story-text p {
-    max-width: 400px;
-    line-height: 1.5rem;
+
+  .about-story-img {
+    margin-top: 50px;
+    max-width: 600px;
   }
 
   .about-vision-border {
+    width: 95%;
+  }
+
+  .mentor-border {
     width: 95%;
   }
 
@@ -2695,6 +2702,30 @@
 
   .input {
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 992px) {
+  .about-story-main {
+    flex-direction: column-reverse;
+  }
+
+  .about-story-text p {
+    max-width: 90%;
+  }
+
+  .mentorModel-section {
+    overflow-y: scroll;
+  }
+  .mentorModel-body {
+    max-width: 100%;
+    width: 80%;
+    height: 100%;
+  }
+
+  .about-story-img {
+    margin-top: 50px;
+    max-width: 600px;
   }
 }
 

@@ -9,7 +9,7 @@ import Footer from "../component/footer/Footer";
 import useScroll from "../component/scrollTop";
 import { ButtonMentor } from "../component/button/ButtonFeedback";
 import { MentorModel } from "../component/models/Models";
-
+import aboutImg from "../img/aboutImg.jpg";
 const About = ({ scroll, openNav, setopenNav }) => {
   useScroll();
 
@@ -67,6 +67,44 @@ const About = ({ scroll, openNav, setopenNav }) => {
           </div>
         </div>
       </div> */}
+      <div className="about-story-section">
+        <div className="about-story-border">
+          <div className="about-story-main">
+            <div className="about-story-img">
+              <img src={aboutImg} alt="" />
+            </div>
+            <div className="about-story-text">
+              <h4>Our Story</h4>
+              <p>
+                The Burma Study Center in Chiang Mai is a non-profit
+                organization. Burma Study Center provides free education for the
+                people of Burma/Myanmar, as well as information and research
+                materials about the country for members of the international
+                community.
+                <br></br>Since welcoming its first members in 2010, Burma Study
+                Center has maintained the largest public, English-language
+                collection of books, reports, periodicals, and films about Burma
+                in Thailand. It has become a vital community resource through
+                its partnerships with a number of universities, media groups,
+                and organizations. Members have conducted and published
+                research, participated in academic events and community forums,
+                and led numerous campaigns advocating for genuine political
+                reform and respect for the human rights of people of all
+                ethnicities and religions in Burma.
+                <br></br> In addition, more than 300 young migrant students in
+                Chiang Mai have completed courses in English, health, and
+                computers at Burma Study Center. Librarians at Burma Study
+                Center are often asked to recommend resources on certain topics
+                or issues. We present this brochure below, highlighting what we
+                feel are some of the most interesting, useful, and engaging
+                Burma-related books, films, and websites. All of the books and
+                films featured in the brochure are available on loan to our
+                members at the Chiang Mai Burma Study Center.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="mentor-section">
         <h4 className="mentor-title">Staff</h4>

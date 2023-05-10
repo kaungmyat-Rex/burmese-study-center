@@ -286,9 +286,9 @@
     overflow-y: scroll;
   }
   .mentorModel-body {
-    max-width: 100%;
+    max-width: 80%;
     width: 80%;
-    height: 100%;
+    height: auto;
   }
 
   .mentorModel-image-info {

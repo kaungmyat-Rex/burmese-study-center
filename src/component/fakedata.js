@@ -6,6 +6,7 @@ import mentorFive from "../img/makin-png.jpg";
 import mentorSix from "../img/yoomwan-png-fix.jpg";
 import mentorSeven from "../img/BobCasper-png.jpg";
 import mentorEight from "../img/FionaBoyle-png.jpg";
+import mentorNine from "../img/jim-png.jpg";
 import mentorOnebg from "../img/Garrett-bg-png.png";
 import mentorTwobg from "../img/SaiSail-bg-png.png";
 import mentorThreebg from "../img/Sai-bg-png.png";
@@ -87,6 +88,15 @@ const mentordata = [
     gmail: "FionaBoyle@gmail.com",
     image: mentorEight,
     imageNoBg: mentorEight,
+  },
+  {
+    id: 9,
+    name: "Jim",
+    carrier: "Teacher",
+    info: "Fiona is a CELTA-certified English teacher from Ireland. She lived in Thailand for two years and was based in Chiang Mai in 2019 when she began volunteering with advanced students at Burma Study Center. During COVID, she was pleased to be able to reconnect with her students online from Ireland, where she spent more than one year in lockdown. Since then, she has moved to Australia and has continued teaching weekly online classes, providing valuable instruction in research, public speaking, presentation skills, and professional writing for BSC students.",
+    gmail: "FionaBoyle@gmail.com",
+    image: mentorNine,
+    imageNoBg: mentorNine,
   },
 ];
 
