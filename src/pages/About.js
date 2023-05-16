@@ -15,6 +15,9 @@ const About = ({ scroll, openNav, setopenNav }) => {
 
   const [mentorModel, setmentorModel] = useState(false);
   const [mentorId, setMentorId] = useState(null);
+  const [seemoreCount, setSeemoreCount] = useState(500);
+  const story =
+    "The Burma Study Center in Chiang Mai is a non-profit organization. Burma Study Center provides free education for the people of Burma/Myanmar, as well as information and research materials about the country for members of the international community. Since welcoming its first members in 2010, Burma Study Center has maintained the largest public, English-language collection of books, reports, periodicals, and films about Burma in Thailand. It has become a vital community resource through its partnerships with a number of universities, media groups, and organizations. Members have conducted and published research, participated in academic events and community forums, and led numerous campaigns advocating for genuine political reform and respect for the human rights of people of all ethnicities and religions in Burma. In addition, more than 300 young migrant students in Chiang Mai have completed courses in English, health, and computers at Burma Study Center. Librarians at Burma Study Center are often asked to recommend resources on certain topics or issues. We present this brochure below, highlighting what we feel are some of the most interesting, useful, and engaging Burma-related books, films, and websites. All of the books and films featured in the brochure are available on loan to our members at the Chiang Mai Burma Study Center";
 
   const openMentorModel = (id) => {
     setmentorModel(true);
@@ -68,15 +71,15 @@ const About = ({ scroll, openNav, setopenNav }) => {
         </div>
       </div> */}
       <div className="about-story-section">
+        <h4>Our Story</h4>
         <div className="about-story-border">
           <div className="about-story-main">
             <div className="about-story-img">
               <img src={aboutImg} alt="" />
             </div>
             <div className="about-story-text">
-              <h4>Our Story</h4>
               <p>
-                The Burma Study Center in Chiang Mai is a non-profit
+                {/* The Burma Study Center in Chiang Mai is a non-profit
                 organization. Burma Study Center provides free education for the
                 people of Burma/Myanmar, as well as information and research
                 materials about the country for members of the international
@@ -99,7 +102,11 @@ const About = ({ scroll, openNav, setopenNav }) => {
                 feel are some of the most interesting, useful, and engaging
                 Burma-related books, films, and websites. All of the books and
                 films featured in the brochure are available on loan to our
-                members at the Chiang Mai Burma Study Center.
+                members at the Chiang Mai Burma Study Center. */}
+                {story.slice(0, seemoreCount)}...{" "}
+                <span onClick={() => setSeemoreCount(story.length)}>
+                  See more
+                </span>
               </p>
             </div>
           </div>
