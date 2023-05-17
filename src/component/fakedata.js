@@ -93,7 +93,7 @@ const mentordata = [
     id: 9,
     name: "Jim",
     carrier: "Teacher",
-    info: "Fiona is a CELTA-certified English teacher from Ireland. She lived in Thailand for two years and was based in Chiang Mai in 2019 when she began volunteering with advanced students at Burma Study Center. During COVID, she was pleased to be able to reconnect with her students online from Ireland, where she spent more than one year in lockdown. Since then, she has moved to Australia and has continued teaching weekly online classes, providing valuable instruction in research, public speaking, presentation skills, and professional writing for BSC students.",
+    info: "Jim is a retired high school teacher-librarian from northeastern Australia. He first stopped by to visit Burma Study Center in 2010 and has been volunteering ever since. Jim provided essential expert support in professionalizing BSC’s lending library of materials on Burma/Myanmar and creating BSC’s Online Catalog. He is passionate about supporting education programs for marginalized communities, particularly the Shan community.  Jim says: “BSC is about real education: grounded in need, enthusiasm, and fun. I’ve also seen how empowering and transformative BSC can be in the lives of students.”",
     gmail: "FionaBoyle@gmail.com",
     image: mentorNine,
     imageNoBg: mentorNine,
