@@ -19,6 +19,7 @@ import Sidenav from "../component/sidenav/Sidenav";
 import useScroll from "../component/scrollTop";
 import { db } from "../component/firebase";
 import { collection, getDocs, addDoc } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 const Home = ({ scroll, openNav, setopenNav }) => {
   const [feedback, setFeedback] = useState([]);
@@ -72,11 +73,13 @@ const Home = ({ scroll, openNav, setopenNav }) => {
                 and research materials about the country for members of the
                 international community.
               </p>
-              <div className="pv-btn-div">
-                <p className="example_f" target="_blank" rel="nofollow">
-                  <span>Learn More</span>
-                </p>
-              </div>
+              <Link to={"/about"}>
+                <div className="pv-btn-div">
+                  <p className="example_f" target="_blank" rel="nofollow">
+                    <span>Learn More</span>
+                  </p>
+                </div>
+              </Link>
             </div>
             <div
               className="provide-img"
@@ -163,11 +166,11 @@ const Home = ({ scroll, openNav, setopenNav }) => {
             </div>
           </div>
         </div>
-        <div style={{ marginTop: "40px" }}>
+        {/* <div style={{ marginTop: "40px" }}>
           <ButtonFeedbackthree moreevent={"View More Event"} />
-        </div>
+        </div> */}
       </div>
-      <div className="feedback-section">
+      {/* <div className="feedback-section">
         <p className="testimontal">TESTIMONIALS</p>
         <h4 className="feedback-title">Student Feedbacks</h4>
         <div className="feedback-border">
@@ -230,7 +233,7 @@ const Home = ({ scroll, openNav, setopenNav }) => {
               </p>
               <p style={{ fontSize: "1.2rem" }}>Forrest Gump</p>
             </div> */}
-          </div>
+      {/* </div>
         </div>
         <div className="feedback-btn">
           <div>
@@ -240,7 +243,8 @@ const Home = ({ scroll, openNav, setopenNav }) => {
             <ButtonFeedbacktwo giveFeed={"Write Your Reviews"} />
           </div>
         </div>
-      </div>
+      </div> */}
+
       <Footer />
     </>
   );

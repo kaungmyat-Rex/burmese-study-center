@@ -98,13 +98,13 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
               About Us
             </Link>
           </p>
-          <p className="program">
+          {/* <p className="program">
             {" "}
             <Link to={"/"} style={{ color: "unset", textDecoration: "none" }}>
               Programs
             </Link>
-          </p>
-          <p className="library">
+          </p> */}
+          {/* <p className="library">
             {" "}
             <a
               href="https://catalog9.burmastudy.org/"
@@ -113,7 +113,7 @@ export const NavVersion = ({ scroll, openNav, setopenNav }) => {
             >
               Library Catalog
             </a>
-          </p>
+          </p> */}
           <p className="contact">
             {" "}
             <Link

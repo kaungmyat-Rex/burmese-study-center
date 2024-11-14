@@ -25,19 +25,19 @@ const Footer = () => {
                 {" "}
                 <p>ABOUT</p>
               </Link>
-              <Link
+              {/* <Link
                 to={"/program"}
                 style={{ color: "white", textDecoration: "none" }}
               >
                 <p>PROGRAM</p>
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 to={"https://catalog9.burmastudy.org/"}
                 style={{ color: "white", textDecoration: "none" }}
               >
                 {" "}
                 <p>LIBRARY</p>
-              </Link>
+              </Link> */}
               <Link
                 to={"/contact"}
                 style={{ color: "white", textDecoration: "none" }}
@@ -93,7 +93,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="social-icon">
-              <FaFacebookF className="facebook" />
+              <Link to={"https://web.facebook.com/BurmaLibrary"}>
+                <FaFacebookF className="facebook" />
+              </Link>
               {/* <FaInstagram className="insta" />
               <FaTwitter className="twitar" /> */}
               <MdOutlineEmail className="mail" />
